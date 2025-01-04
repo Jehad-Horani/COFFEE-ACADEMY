@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COFFEE ACADEMY</title>
+  <link rel="shortcut icon" type="x-icon" href="logopreview.png">
+  <style>
+    h1 {
+      text-align: center;
+      color: #e8e2db;
+    }
+
+
+
+
+    .machines-container {
+      display: flex;
+      flex-wrap: wrap;
+      /* للتمديد  */
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 50px;
+      margin-top: 80px;
+      height: 500px;
+    }
+
+    .machine-box {
+      width: 400px;
+      height: 150px;
+      background-color: #23170B;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid #ccc;
+
+    }
+
+    .machine-box .machine-name {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #d4cbc2;
+    }
+
+    .machine-box img {
+      width: 40%;
+      height: 80%;
+      margin: 15px;
+      border-radius: 30px;
+    }
+
+    .machine-box:hover {
+      background-color: #d4cbc2;
+      width: 410px;
+      height: 160px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .machine-box:hover .machine-name {
+      color: #23170B;
+    }
+
+
+
+
+
+
+    .image-box {
+      background-color: #23170B;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: fit-content;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+
+
+    .content-box .image-box img {
+      width: 100%;
+      max-height: 450px;
+    }
+
+
+    .content-box h2 {
+      background-color: #23170B;
+      color: #d4cbc2;
+      padding: 15px;
+      margin: 20px auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 40%;
+    }
+
+
+    .boxx {
+      background-color: #23170B;
+      width: 100px;
+      height: 50px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      background-color: #23170B;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 30px;
+      font-size: x-small;
+      color: #d4cbc2;
+      position: sticky;
+      top: 90%;
+      right: 1400px;
+      z-index: 0;
+    }
+
+    .boxx:hover {
+      background-color: #d4cbc2;
+      color: #23170B;
+      transition: 0.2s;
+    }
+
+    .boxx h1:hover {
+      color: #23170B;
+    }
+
+    .logo-left {
+      position: fixed;
+      top: 20%;
+      left: -80px;
+      width: 250px;
+      opacity: 0.8;
+      transform: rotate(-10deg);
+      z-index: -2;
+
+    }
+
+    .logo-right {
+      position: fixed;
+      top: 50%;
+      right: -60px;
+      width: 250px;
+      opacity: 0.8;
+      transform: rotate(20deg);
+      z-index: -2;
+    }
+  </style>
+</head>
+
+
+
+
+<body>
+
+  <div class="panner" id="up">
+    <video autoplay loop muted plays-inline>
+      <source src="bun.mp4" type="video/mp4">
+    </video>
+
+    <div class="navbar">
+      <a href="test.html"> <img class="logo" src="logo.png"></a>
+      <nav>
+        <ul>
+          <li><a href="test.html">home</a></li>
+          <li><a href="SuccessStoris.html">Success Stories</a></li>
+          <li><a href="Albun.html">BEANS</a></li>
+          <li><a href="Machines.html">Machines</a></li>
+          <li><a href="SecretRecipe.html">Secret Recipes</a></li>
+          <li><a href="caffeine.html">caffeine</a></li>
+          <li><a href="ResourceLibrary.html">Resource Library</a></li>
+          <li><a href="AboutUS.html">About Us</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <h1 class="head1">Machines</h1>
+    <div class="machines-container">
+
+      <!-- Machine 1 -->
+      <a href="#machine1" class="machine-box">
+        <img src="machine1.jpg" alt="Espresso Machine">
+        <div class="machine-name">Espresso Machine</div>
+      </a>
+
+      <!-- Machine 2 -->
+      <a href="#machine2" class="machine-box">
+        <img src="machine2.jpg" alt="French Press">
+        <div class="machine-name">French Press</div>
+      </a>
+
+      <!-- Machine 3 -->
+      <a href="#machine3" class="machine-box">
+        <img src="machine3.jpg" alt="Electric Drip Coffee Maker">
+        <div class="machine-name">Electric Drip Coffee Maker</div>
+      </a>
+
+      <!-- Machine 4 -->
+      <a href="#machine4" class="machine-box">
+        <img src="machine4.jpg" alt="Cold Brew Tower">
+        <div class="machine-name">Cold Brew Tower</div>
+      </a>
+
+      <!-- Machine 5 -->
+      <a href="#machine5" class="machine-box middle">
+        <img src="machine5.jpg" alt="Nitro Cold Brew Maker">
+        <div class="machine-name">Nitro Cold Brew Maker</div>
+      </a>
+    </div>
+  </div>
+
+  <a href="#up" style="text-decoration: none;">
+    <div class="boxx">
+      <h1>go up ^</h1>
+    </div>
+  </a>
+  <img class="logo-left" src="images/logo.png" alt="Logo">
+  <img class="logo-right" src="images/logo.png" alt="Logo">
+  <div class="center" style="text-align: center;">
+
+    <!-- Espresso Machine -->
+    <div id="machine1" class="content-box">
+      <div class="image-box">
+        <img src="machine1.jpg" alt="Espresso Machine">
+      </div>
+      <h2>Espresso Machine</h2>
+      <p><strong>Brewing Method Used:</strong> Uses high pressure to pass hot water through finely ground coffee in a
+        short time, producing a concentrated and rich espresso.</p>
+      <br>
+      <p><strong>Pressure Level:</strong> The pump pressure typically ranges between 9-15 bars.</p>
+      <br>
+      <p><strong>Coffee Grind Size Suitable for Device:</strong> Fine grind.</p>
+      <br>
+      <p><strong>Type of Coffee Beans Used:</strong> Suitable for all types of coffee beans, but darker roasts like
+        Robusta beans or dark blends are often preferred.</p>
+      <br>
+    </div>
+
+    <hr color>
+
+    <!-- French Press -->
+    <div id="machine2" class="content-box">
+      <div class="image-box">
+        <img src="machine2.jpg" alt="French Press">
+      </div>
+      <h2>French Press</h2>
+      <p><strong>Brewing Method Used:</strong> Coffee grounds are steeped in hot water for a set time, then separated by
+        pressing down to keep the coffee grounds below the filter.</p>
+      <br>
+      <p><strong>Pressure Level:</strong> No mechanical pressure; relies only on immersion.</p>
+      <br>
+      <p><strong>Coffee Grind Size Suitable for Device:</strong> Coarse grind.</p>
+      <br>
+      <p><strong>Type of Coffee Beans Used:</strong> Best for mild or fruity coffee, like Arabica beans with a medium
+        roast.</p>
+      <br>
+    </div>
+
+    <hr color>
+
+    <!-- Electric Drip Coffee Maker -->
+    <div id="machine3" class="content-box">
+      <div class="image-box">
+        <img src="machine3.jpg" alt="Electric Drip Coffee Maker">
+      </div>
+      <h2>Electric Drip Coffee Maker</h2>
+      <p><strong>Brewing Method Used:</strong> The device heats water to an optimal temperature, which then flows over
+        ground coffee slowly, dripping into a glass or ceramic carafe ready for serving.</p>
+      <br>
+      <p><strong>Pressure Level:</strong> Relies on gravity for water flow, without any added pressure.</p>
+      <br>
+      <p><strong>Coffee Grind Size Suitable for Device:</strong> Medium grind.</p>
+      <br>
+      <p><strong>Type of Coffee Beans Used:</strong> Best suited for light to medium roast coffee, like Arabica beans,
+        to provide a smooth and balanced flavor.</p>
+      <br>
+    </div>
+
+    <hr color>
+
+    <!-- Cold Brew Tower -->
+    <div id="machine4" class="content-box">
+      <div class="image-box">
+        <img src="machine4.jpg" alt="Cold Brew Tower">
+      </div>
+      <h2>Cold Brew Tower</h2>
+      <p><strong>Brewing Method Used:</strong> Utilizes a slow drip process where cold water seeps through coarsely
+        ground coffee over an extended period (usually 12-24 hours), producing a smooth, concentrated coffee
+        concentrate.</p>
+      <br>
+      <p><strong>Pressure Level:</strong> Relies on gravity and time, with no mechanical pressure involved in the
+        brewing process.</p>
+      <br>
+      <p><strong>Coffee Grind Size Suitable for Device:</strong> Coarse grind.</p>
+      <br>
+      <p><strong>Type of Coffee Beans Used:</strong> Typically made with medium or dark roast beans, such as Arabica or
+        a blend, to enhance the rich flavors without acidity.</p>
+      <br>
+    </div>
+
+    <hr color>
+
+    <!-- Nitro Cold Brew Maker -->
+    <div id="machine5" class="content-box">
+      <div class="image-box">
+        <img src="machine5.jpg" alt="Nitro Cold Brew Maker">
+      </div>
+      <h2>Nitro Cold Brew Maker</h2>
+      <p><strong>Brewing Method Used:</strong> Starts with cold brew coffee concentrate and infuses it with nitrogen
+        gas, resulting in a creamy, frothy texture and a smooth mouthfeel, often served straight from a tap.</p>
+      <br>
+      <p><strong>Pressure Level:</strong> Uses nitrogen pressure, typically around 30-40 PSI, to infuse the cold brew
+        coffee.</p>
+      <br>
+      <p><strong>Coffee Grind Size Suitable for Device:</strong> Coarse grind.</p>
+      <br>
+      <p><strong>Type of Coffee Beans Used:</strong> Works well with various coffee beans, but many prefer using a
+        medium to dark roast for a richer flavor profile that balances well with the nitrogen infusion.</p>
+      <br>
+    </div>
+
+    <br>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br><br>
+
+  <div class="header">
+
+    <nav>
+      <ul>
+        <li style="padding: 20px 200px;"><a href="test.html">home</a></li>
+        <li style="padding: 20px 117px;"> <a href="ResourceLibrary.html">Resource Library</a></li>
+        <li><a href="SecretRecipe.html">Secret Recipe</a></li> <br>
+        <li><a href="AboutUS.html">About US</a></li>
+        <li style="padding: 20px 145px;"><a href="Machines.html">coffee Machines</a></li>
+        <li> <a href="ContactUs.html">Contact Us</a></li> <br>
+        <li><a href="SuccessStoris.html">Success Storis</a></li>
+        <li><a href="Albun.html">BEANS</a></li>
+      </ul>
+
+    </nav>
+    <br>
+    <div class="fot">
+
+
+
+      <p>Contact us</p>
+      Mobile number : +962 7 7865 4506<br>
+      social media: <br><br>
+      <a href="https://www.instagram.com/_jehad05_/" target="_blank"><img src="instagram.png" width="50"></a>
+
+      <a href="https://m.facebook.com/100013877677379/" target="_blank"><img src="facebook.png" width="50"></a>
+
+      <a href="https://jo.linkedin.com/in/jehad-alhourani-33909a2b1?trk=people-guest_people_search-card"
+        target="_blank"><img src="linkedin.png" width="50"></a>
+
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+
+
+
+</html>

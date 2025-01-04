@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE ACADEMY</title>
+    <link rel="shortcut icon" type="x-icon" href="logopreview.png">
+
+    <style>
+        .logo-left {
+            position: fixed;
+            top: 20%;
+            left: -80px;
+            width: 250px;
+            opacity: 0.8;
+            transform: rotate(-10deg);
+            z-index: -1;
+
+        }
+
+        .logo-right {
+            position: fixed;
+            top: 50%;
+            right: -60px;
+            width: 250px;
+            opacity: 0.8;
+            transform: rotate(20deg);
+            z-index: -1;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: serif;
+            font-weight: 600;
+        }
+
+
+        header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+
+
+
+        .inbut {
+            text-align: center;
+
+        }
+
+        .inbut input::placeholder {
+            text-align: center;
+            font-weight: 600;
+            font-family: serif;
+        }
+
+        .inbut input {
+
+            border-radius: 20px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .inbut select {
+            border-radius: 20px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .inbut textarea {
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .inbut textarea::placeholder {
+            text-align: center;
+            font-weight: 600;
+            font-family: serif;
+            padding-top: 10px;
+        }
+
+        button {
+            width: 150px;
+            padding: 15px;
+            margin: 20px 5px;
+            text-align: center;
+            border-radius: 25px;
+            color: #23170B;
+            border: 2px;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background: #23170B;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            color: #d4cbc3;
+        }
+
+        .buttonn {
+            text-align: center;
+        }
+
+        .chose {
+            font-family: fantasy;
+            padding-left: 30px;
+            font-weight: 100;
+        }
+
+        .chose input {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <div class="navbar">
+        <a href="test.html">
+            <img class="logo" src="images/logo.png" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="test.html">home</a></li>
+                <li><a href="SuccessStoris.html">Success Stories</a></li>
+                <li><a href="Albun.html">BEANS</a></li>
+                <li><a href="Machines.html">Machines</a></li>
+                <li><a href="SecretRecipe.html">Secret Recipes</a></li>
+                <li><a href="caffeine.html">caffeine</a></li>
+                <li><a href="ResourceLibrary.html">Resource Library</a></li>
+                <li><a href="AboutUS.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <img class="logo-left" src="images/logo.png" alt="Logo">
+    <img class="logo-right" src="images/logo.png" alt="Logo">
+
+    <br><br><br><br><br><br><br>
+    <header>
+        <p id="date-time"></p>
+        <h1 class="head2">Calculate the amount of caffeine you have consumed in your day</h1>
+    </header>
+    <main>
+
+
+
+        <form id="dataForm">
+            <div class="inbut">
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Name"><br>
+                <span class="error" id="nameError"></span><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email"><br>
+                <span class="error" id="emailError"></span><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" placeholder="Age"><br>
+                <span class="error" id="ageError"></span><br>
+
+            </div>
+
+            <label>Gender:</label><br>
+            <div class="chose">
+
+                <input type="radio" id="male" name="gender" value="Male"> Male<br>
+                <input type="radio" id="female" name="gender" value="Female"> Female<br>
+                <span class="error" id="genderError"></span><br>
+            </div>
+
+            <label for="interests">Interests in coffee:</label><br>
+            <div class="chose">
+                <input type="checkbox" id="Arabic Coffee" name="interests" value="Arabic Coffee"> Arabic Coffee<br>
+                <input type="checkbox" id="V60" name="interests" value="V60"> V60<br>
+                <input type="checkbox" id="Cortado" name="interests" value="Cortado">Cortado <br>
+                <input type="checkbox" id="American Coffee" name="interests" value="American Coffee"> American
+                Coffee<br>
+                <input type="checkbox" id="Flat White" name="interests" value="Flat White">Flat White <br>
+                <input type="checkbox" id="Americano" name="interests" value="Americano"> Americano<br>
+                <input type="checkbox" id="Latte" name="interests" value="Latte"> Latte<br>
+                <input type="checkbox" id="Cold Brew" name="interests" value="Cold Brew"> Cold Brew<br>
+                <input type="checkbox" id="Macchiato" name="interests" value="Macchiato">Macchiato <br>
+                <input type="checkbox" id="Espresso Coffee" name="interests" value="Espresso Coffee"> Espresso
+                Coffee<br>
+                <span class="error" id="interestsError"></span><br>
+            </div>
+
+            <div class="inbut">
+                <label for="listt">What kind of coffee did you drink today?</label><br><br>
+                <select id="listt">
+                    <option value="V60 coffee" id="coffee" selected>V60 coffee</option>
+                    <option value="turkish coffee" id="coffee">turkish coffee</option>
+                    <option value="Latte" id="coffee">Latte</option>
+                    <option value="Americano" id="coffee">Americano</option>
+                </select>
+
+                <br><br><br>
+                <label for="cup">How many cups(250ml) of coffee did you have today? </label><br><br>
+                <input type="number" id="cup" name="cup" min="0" placeholder="number of cups"><br>
+                <span class="error" id="cupError"></span><br>
+
+            </div>
+
+            <div class="buttonn">
+                <button type="button" onclick="validateForm()">Submit</button>
+                <p id="result"></p>
+            </div>
+
+            <div class="inbut">
+                <br><br>
+                <label for="report">Report:</label><br>
+                <textarea id="report" name="report" readonly cols="35" rows="20"
+                    placeholder="Your results will appear here"></textarea><br><br>
+
+            </div>
+
+        </form>
+
+        <script>
+            //التاريخ والوقت
+            myvar = setInterval(mytimer, 1000);
+            function mytimer() {
+                var d = new Date();
+                document.getElementById('date-time').innerHTML = d.toLocaleString();
+            }
+
+            //التحقق 
+            function validateForm() {
+                var isValid = true;
+
+                var coffeeField = document.getElementById('listt');
+                var nameField = document.getElementById('name');
+                var emailField = document.getElementById('email');
+                var ageField = document.getElementById('age');
+                var cupField = document.getElementById('cup');
+                var reportField = document.getElementById('report');
+                var genderFields = document.getElementsByName("gender");
+                var interestFields = document.getElementsByName("interests");
+                var caffein = 0;
+
+
+
+                if (coffeeField.value === "V60 coffee") {
+                    caffein = cupField.value * 173;
+                }
+                else if (coffeeField.value === "turkish coffee") {
+                    caffein = cupField.value * 208.3;
+                }
+                else if (coffeeField.value === "Latte") {
+                    caffein = cupField.value * 63.6;
+                }
+                else if (coffeeField.value === "Americano") {
+                    caffein = cupField.value * 108.3;
+                }
+
+
+
+
+                for (let i = 0; i < 2; i++) {
+
+
+                    // الاسم
+                    if (nameField.value === '') {
+                        document.getElementById('nameError').innerHTML = 'Name is required.';
+                        nameField.style.border = '3px solid red';
+                        isValid = false;
+                        break;
+                    } else {
+                        document.getElementById('nameError').innerHTML = '';
+                        nameField.style.border = '3px solid green';
+                        isValid = true;
+                    }
+
+                    // الايميل
+                    if (emailField.value === '') {
+                        document.getElementById('emailError').innerHTML = 'Email is required.';
+                        emailField.style.border = '3px solid red';
+                        isValid = false;
+                        break;
+                    } else {
+                        document.getElementById('emailError').innerHTML = '';
+                        emailField.style.border = '3px solid green';
+                        isValid = true;
+                    }
+
+                    // العمر
+                    if (ageField.value === '' || ageField.value > 120) {
+                        document.getElementById('ageError').innerHTML = 'Please enter a valid age (18-120).';
+                        ageField.style.border = '3px solid red';
+                        isValid = false;
+                        break;
+                    }
+                    else if (ageField.value < 18) {
+                        document.getElementById('ageError').innerHTML = 'You must be over 18 to drink coffee';
+                        ageField.style.border = '3px solid red';
+                        isValid = false;
+                        break;
+                    }
+                    else {
+                        document.getElementById('ageError').innerHTML = '';
+                        ageField.style.border = '3px solid green';
+                        isValid = true;
+                    }
+
+                    // ذكر او انثى
+                    var genderSelected = Array.from(genderFields).some(radio => radio.checked);
+                    if (!genderSelected) {
+                        document.getElementById('genderError').innerHTML = 'Please select a gender.';
+                        isValid = false;
+                        break;
+
+                    } else {
+                        document.getElementById('genderError').innerHTML = '';
+                        isValid = true;
+                    }
+
+                    // الاهتمامات
+                    var interestsSelected = Array.from(interestFields).some(checkbox => checkbox.checked);
+                    if (!interestsSelected) {
+                        document.getElementById('interestsError').innerHTML = 'Please select at least one interest.';
+                        isValid = false;
+                        break;
+                    } else {
+                        document.getElementById('interestsError').innerHTML = '';
+                        isValid = true;
+                    }
+
+                    // عدد اكواب القهوة
+                    if (cupField.value === '' || cupField.value < 0) {
+                        document.getElementById('cupError').innerHTML = 'Please enter a valid cup num.';
+                        cupField.style.border = '2px solid red';
+                        isValid = false;
+                        break;
+                    } else {
+                        document.getElementById('cupError').innerHTML = '';
+                        cupField.style.border = '2px solid green';
+                        isValid = true;
+                    }
+                }
+
+                // طباعة التقرير
+                var result = '<h2>'
+                var per = '<h2>';
+                var reportt = '';
+                var selectedGender = Array.from(genderFields).find(radio => radio.checked).value;
+                var selectedInterests = Array.from(interestFields).filter(checkbox => checkbox.checked).map(cb => cb.value).join(', ');
+                if (caffein > 700) {
+                    per += ' and This is an exaggerated percentage';
+                    result += caffein + "mg of caffeine has entered your body today" + per + '</h2>';
+                }
+                else {
+                    per += ' and This is a normal percentage';
+                    result += caffein + "mg of caffeine has entered your body today" + per + '</h2>';
+
+                }
+
+                reportt += " Name:" + nameField.value + "\n\nEmail:" + emailField.value + "\n\nAge:" + ageField.value + "\n\nGender:" + selectedGender + "\n\nInterests in coffee: \n" + selectedInterests + "\n" + "\n\n Number of " + coffeeField.value + " cups:" + cupField.value + "\n\ncaffeine:" + caffein + "mg";
+
+
+                if (isValid) {
+                    document.getElementById('report').value = reportt
+                    document.getElementById("result").innerHTML = result + '</h2>'
+                }
+                else {
+                    reportField.value = '';
+                    document.getElementById("result").innerHTML = ''
+                }
+
+            }
+        </script>
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <br><br><br><br>
+    <div class="header">
+
+        <nav>
+            <ul>
+                <li style="padding: 20px 200px;"><a href="test.html">home</a></li>
+                <li style="padding: 20px 117px;"> <a href="ResourceLibrary.html">Resource Library</a></li>
+                <li><a href="SecretRecipe.html">Secret Recipe</a></li> <br>
+                <li><a href="AboutUS.html">About US</a></li>
+                <li style="padding: 20px 145px;"><a href="Machines.html">coffee Machines</a></li>
+                <li> <a href="ContactUs.html">Contact Us</a></li> <br>
+                <li><a href="SuccessStoris.html">Success Storis</a></li>
+                <li><a href="Albun.html">BEANS</a></li>
+            </ul>
+
+        </nav>
+        <br>
+        <div class="fot">
+
+
+
+            <p>Contact us</p>
+            Mobile number : +962 7 7865 4506<br>
+            social media: <br><br>
+            <a href="https://www.instagram.com/_jehad05_/" target="_blank"><img src="instagram.png" width="50"></a>
+
+            <a href="https://m.facebook.com/100013877677379/" target="_blank"><img src="facebook.png" width="50"></a>
+
+            <a href="https://jo.linkedin.com/in/jehad-alhourani-33909a2b1?trk=people-guest_people_search-card"
+                target="_blank"><img src="linkedin.png" width="50"></a>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+
+
+
+</html>
