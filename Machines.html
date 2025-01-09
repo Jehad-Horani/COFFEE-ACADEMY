@@ -3,6 +3,8 @@
 <link rel="stylesheet" href="style.css">
 
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>COFFEE ACADEMY</title>
   <link rel="shortcut icon" type="x-icon" href="logopreview.png">
@@ -12,7 +14,15 @@
       color: #e8e2db;
     }
 
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: serif;
+            font-weight: 600;
+            background-color: bisque;
 
+        }
 
 
     .machines-container {
@@ -112,7 +122,7 @@
       padding: 10px;
       cursor: pointer;
       border-radius: 30px;
-      font-size: x-small;
+      font-size: x-large;
       color: #d4cbc2;
       position: sticky;
       top: 90%;
@@ -150,6 +160,11 @@
       transform: rotate(20deg);
       z-index: -2;
     }
+    .head1{
+      color: #23170B;
+      font-size: xx-large;
+      font-weight: 700;
+    }
   </style>
 </head>
 
@@ -158,29 +173,58 @@
 
 <body>
 
-  <div class="panner" id="up">
-    <video autoplay loop muted plays-inline>
-      <source src="bun.mp4" type="video/mp4">
-    </video>
+  
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0%;" >
+      <p id="up"></p>
+      <div class="container-fluid" style="  background-color: #23170B;  ;">
+          <a class="navbar-brand" href="index.html">
+              <img src="logo.png" alt="Bootstrap" width="60" height="44">
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" style="color: #d4cbc2;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SuccessStoris.html" style="color: #d4cbc2;">Success Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="caffeine.html" style="color: #d4cbc2;">caffeine</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #d4cbc2;">
+                  Courses
+              </a>
+              <ul class="dropdown-menu" style="  background-color: #23170B; ">
+                <li><a class="dropdown-item" href="Albun.html" style="color: #d4cbc2;">BEANS</a></li>
+                <li><a class="dropdown-item" href="Machines.html" style="color: #d4cbc2;">Machines</a></li>
+                <li><a class="dropdown-item" href="SecretRecipe.html" style="color: #d4cbc2;">Secret Recipes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ResourceLibrary.html" style="color: #d4cbc2;">Resource Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUS.html" style="color: #d4cbc2;">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html" style="color: #d4cbc2;">Contact Us</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
 
-    <div class="navbar">
-      <a href="index.html"> <img class="logo" src="logo.png"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="SuccessStoris.html">Success Stories</a></li>
-          <li><a href="Albun.html">BEANS</a></li>
-          <li><a href="Machines.html">Machines</a></li>
-          <li><a href="SecretRecipe.html">Secret Recipes</a></li>
-          <li><a href="caffeine.html">caffeine</a></li>
-          <li><a href="ResourceLibrary.html">Resource Library</a></li>
-          <li><a href="AboutUS.html">About Us</a></li>
-          <li><a href="ContactUs.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
 
-    <br><br><br><br><br><br><br>
+    <br>
+
+    
 
     <h1 class="head1">Machines</h1>
     <div class="machines-container">
@@ -217,162 +261,154 @@
     </div>
   </div>
 
-  <a href="#up" style="text-decoration: none;">
-    <div class="boxx">
-      <h1>go up ^</h1>
-    </div>
-  </a>
+  <a href="#up" style="text-decoration: none;"><h1 class="boxx">go up ^</h1> </a>
+  
+  
+  
+  
   <img class="logo-left" src="logo.png" alt="Logo">
   <img class="logo-right" src="logo.png" alt="Logo">
-  <div class="center" style="text-align: center;">
+  <div class="container-fluid">
 
-    <!-- Espresso Machine -->
-    <div id="machine1" class="content-box">
-      <div class="image-box">
-        <img src="machine1.jpg" alt="Espresso Machine">
-      </div>
+    <div class="center" style="text-align: center;">
+      
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <!-- Espresso Machine -->
+      <div id="machine1" class="content-box">
+        <div class="image-box">
+          <img src="machine1.jpg" alt="Espresso Machine">
+        </div>
       <h2>Espresso Machine</h2>
       <p><strong>Brewing Method Used:</strong> Uses high pressure to pass hot water through finely ground coffee in a
         short time, producing a concentrated and rich espresso.</p>
-      <br>
-      <p><strong>Pressure Level:</strong> The pump pressure typically ranges between 9-15 bars.</p>
-      <br>
-      <p><strong>Coffee Grind Size Suitable for Device:</strong> Fine grind.</p>
-      <br>
-      <p><strong>Type of Coffee Beans Used:</strong> Suitable for all types of coffee beans, but darker roasts like
-        Robusta beans or dark blends are often preferred.</p>
-      <br>
-    </div>
-
-    <hr color>
-
-    <!-- French Press -->
-    <div id="machine2" class="content-box">
-      <div class="image-box">
-        <img src="machine2.jpg" alt="French Press">
-      </div>
-      <h2>French Press</h2>
-      <p><strong>Brewing Method Used:</strong> Coffee grounds are steeped in hot water for a set time, then separated by
-        pressing down to keep the coffee grounds below the filter.</p>
-      <br>
-      <p><strong>Pressure Level:</strong> No mechanical pressure; relies only on immersion.</p>
-      <br>
-      <p><strong>Coffee Grind Size Suitable for Device:</strong> Coarse grind.</p>
-      <br>
-      <p><strong>Type of Coffee Beans Used:</strong> Best for mild or fruity coffee, like Arabica beans with a medium
-        roast.</p>
-      <br>
-    </div>
-
-    <hr color>
-
-    <!-- Electric Drip Coffee Maker -->
-    <div id="machine3" class="content-box">
+        <br>
+        <p><strong>Pressure Level:</strong> The pump pressure typically ranges between 9-15 bars.</p>
+        <br>
+        <p><strong>Coffee Grind Size Suitable for Device:</strong> Fine grind.</p>
+        <br>
+        <p><strong>Type of Coffee Beans Used:</strong> Suitable for all types of coffee beans, but darker roasts like
+          Robusta beans or dark blends are often preferred.</p>
+          <br>
+        </div>
+        
+        <hr color>
+        
+        <!-- French Press -->
+        <div id="machine2" class="content-box">
+          <div class="image-box">
+            <img src="machine2.jpg" alt="French Press">
+          </div>
+          <h2>French Press</h2>
+          <p><strong>Brewing Method Used:</strong> Coffee grounds are steeped in hot water for a set time, then separated by
+            pressing down to keep the coffee grounds below the filter.</p>
+            <br>
+            <p><strong>Pressure Level:</strong> No mechanical pressure; relies only on immersion.</p>
+            <br>
+            <p><strong>Coffee Grind Size Suitable for Device:</strong> Coarse grind.</p>
+            <br>
+            <p><strong>Type of Coffee Beans Used:</strong> Best for mild or fruity coffee, like Arabica beans with a medium
+              roast.</p>
+              <br>
+            </div>
+            
+            <hr color>
+            
+            <!-- Electric Drip Coffee Maker -->
+            <div id="machine3" class="content-box">
       <div class="image-box">
         <img src="machine3.jpg" alt="Electric Drip Coffee Maker">
       </div>
       <h2>Electric Drip Coffee Maker</h2>
       <p><strong>Brewing Method Used:</strong> The device heats water to an optimal temperature, which then flows over
         ground coffee slowly, dripping into a glass or ceramic carafe ready for serving.</p>
-      <br>
-      <p><strong>Pressure Level:</strong> Relies on gravity for water flow, without any added pressure.</p>
-      <br>
-      <p><strong>Coffee Grind Size Suitable for Device:</strong> Medium grind.</p>
-      <br>
-      <p><strong>Type of Coffee Beans Used:</strong> Best suited for light to medium roast coffee, like Arabica beans,
-        to provide a smooth and balanced flavor.</p>
-      <br>
-    </div>
-
-    <hr color>
-
-    <!-- Cold Brew Tower -->
-    <div id="machine4" class="content-box">
-      <div class="image-box">
-        <img src="machine4.jpg" alt="Cold Brew Tower">
-      </div>
-      <h2>Cold Brew Tower</h2>
-      <p><strong>Brewing Method Used:</strong> Utilizes a slow drip process where cold water seeps through coarsely
-        ground coffee over an extended period (usually 12-24 hours), producing a smooth, concentrated coffee
-        concentrate.</p>
-      <br>
-      <p><strong>Pressure Level:</strong> Relies on gravity and time, with no mechanical pressure involved in the
-        brewing process.</p>
+        <br>
+        <p><strong>Pressure Level:</strong> Relies on gravity for water flow, without any added pressure.</p>
+        <br>
+        <p><strong>Coffee Grind Size Suitable for Device:</strong> Medium grind.</p>
+        <br>
+        <p><strong>Type of Coffee Beans Used:</strong> Best suited for light to medium roast coffee, like Arabica beans,
+          to provide a smooth and balanced flavor.</p>
+          <br>
+        </div>
+        
+        <hr color>
+        
+        <!-- Cold Brew Tower -->
+        <div id="machine4" class="content-box">
+          <div class="image-box">
+            <img src="machine4.jpg" alt="Cold Brew Tower">
+          </div>
+          <h2>Cold Brew Tower</h2>
+          <p><strong>Brewing Method Used:</strong> Utilizes a slow drip process where cold water seeps through coarsely
+            ground coffee over an extended period (usually 12-24 hours), producing a smooth, concentrated coffee
+            concentrate.</p>
+            <br>
+            <p><strong>Pressure Level:</strong> Relies on gravity and time, with no mechanical pressure involved in the
+              brewing process.</p>
       <br>
       <p><strong>Coffee Grind Size Suitable for Device:</strong> Coarse grind.</p>
       <br>
       <p><strong>Type of Coffee Beans Used:</strong> Typically made with medium or dark roast beans, such as Arabica or
         a blend, to enhance the rich flavors without acidity.</p>
-      <br>
-    </div>
-
-    <hr color>
-
-    <!-- Nitro Cold Brew Maker -->
-    <div id="machine5" class="content-box">
-      <div class="image-box">
-        <img src="machine5.jpg" alt="Nitro Cold Brew Maker">
+        <br>
       </div>
-      <h2>Nitro Cold Brew Maker</h2>
-      <p><strong>Brewing Method Used:</strong> Starts with cold brew coffee concentrate and infuses it with nitrogen
-        gas, resulting in a creamy, frothy texture and a smooth mouthfeel, often served straight from a tap.</p>
-      <br>
-      <p><strong>Pressure Level:</strong> Uses nitrogen pressure, typically around 30-40 PSI, to infuse the cold brew
-        coffee.</p>
-      <br>
-      <p><strong>Coffee Grind Size Suitable for Device:</strong> Coarse grind.</p>
-      <br>
-      <p><strong>Type of Coffee Beans Used:</strong> Works well with various coffee beans, but many prefer using a
-        medium to dark roast for a richer flavor profile that balances well with the nitrogen infusion.</p>
-      <br>
-    </div>
+      
+      <hr color>
+      
+      <!-- Nitro Cold Brew Maker -->
+      <div id="machine5" class="content-box">
+        <div class="image-box">
+          <img src="machine5.jpg" alt="Nitro Cold Brew Maker">
+        </div>
+        <h2>Nitro Cold Brew Maker</h2>
+        <p><strong>Brewing Method Used:</strong> Starts with cold brew coffee concentrate and infuses it with nitrogen
+          gas, resulting in a creamy, frothy texture and a smooth mouthfeel, often served straight from a tap.</p>
+          <br>
+          <p><strong>Pressure Level:</strong> Uses nitrogen pressure, typically around 30-40 PSI, to infuse the cold brew
+            coffee.</p>
+            <br>
+            <p><strong>Coffee Grind Size Suitable for Device:</strong> Coarse grind.</p>
+            <br>
+            <p><strong>Type of Coffee Beans Used:</strong> Works well with various coffee beans, but many prefer using a
+              medium to dark roast for a richer flavor profile that balances well with the nitrogen infusion.</p>
+              <br>
+            </div>
+            
+            <br>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </div>
+          
 
-    <br>
-  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <br><br>
-
-  <div class="header">
-
-    <nav>
-      <ul>
-        <li style="padding: 20px 200px;"><a href="test.html">home</a></li>
-        <li style="padding: 20px 117px;"> <a href="ResourceLibrary.html">Resource Library</a></li>
-        <li><a href="SecretRecipe.html">Secret Recipe</a></li> <br>
-        <li><a href="AboutUS.html">About US</a></li>
-        <li style="padding: 20px 145px;"><a href="Machines.html">coffee Machines</a></li>
-        <li> <a href="ContactUs.html">Contact Us</a></li> <br>
-        <li><a href="SuccessStoris.html">Success Storis</a></li>
-        <li><a href="Albun.html">BEANS</a></li>
-      </ul>
-
-    </nav>
-    <br>
+          
+          
+          
+          
+          
+          
+          <br><br>
+          
+          <div class="header">
+            
+  
     <div class="fot">
-
-
-
+      
+      
+      
       <p>Contact us</p>
       Mobile number : +962 7 7865 4506<br>
       social media: <br><br>
@@ -390,6 +426,7 @@
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 
