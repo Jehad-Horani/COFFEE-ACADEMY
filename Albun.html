@@ -3,44 +3,61 @@
 <link rel="stylesheet" href="style.css">
 
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>COFFEE ACADEMY</title>
   <link rel="shortcut icon" type="x-icon" href="logopreview.png">
   <style>
-    .container {
+    .machines-container {
       display: flex;
+      flex-wrap: wrap;
+      /* للتمديد  */
       justify-content: center;
-      margin-top: 20px;
-      margin: 0px 0px 0px 0px;
-
+      gap: 20px;
+      margin-bottom: 50px;
+      margin-top: 80px;
+      height: 500px;
     }
 
-    .container a {
-      text-decoration: none;
-      color: #d4cbc3;
-      font-size: x-large;
-    }
-
-    .box {
+    .machine-box {
       width: 400px;
       height: 150px;
-      margin: 10px;
-      border: 1px solid #ccc;
       background-color: #23170B;
-      text-align: center;
-      padding: 10px;
-      cursor: pointer;
       border-radius: 30px;
-      background-repeat: no-repeat;
-      background-size: 100px;
-      background-position: left;
-      background-position-x: 10px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid #ccc;
+
     }
 
-    .box h3 {
-      margin-top: 10px;
+    .machine-box .machine-name {
       text-align: center;
-      padding: 35px 0px 0px 100px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #d4cbc2;
+    }
+
+    .machine-box img {
+      width: 40%;
+      height: 80%;
+      margin: 15px;
+      border-radius: 30px;
+    }
+
+    .machine-box:hover {
+      background-color: #d4cbc2;
+      width: 410px;
+      height: 160px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .machine-box:hover .machine-name {
+      color: #23170B;
     }
 
     .image-box {
@@ -61,9 +78,6 @@
     }
 
 
-    .container1 {
-      margin-top: 100px;
-    }
 
     .header-box {
       background-color: #23170B;
@@ -78,9 +92,7 @@
       width: 40%;
     }
 
-    .con {
-      margin: 10px 90px 10px 90px;
-    }
+
 
     .center {
       text-align: center;
@@ -107,17 +119,7 @@
       z-index: -2;
     }
 
-    .box:hover {
-      background: #d4cbc3;
-      transition: 0.1s;
-      background-repeat: no-repeat;
-      background-size: 120px;
-      background-position: left;
-      background-position-x: 10px;
-      color: #23170B;
-      width: 420px;
-      height: 170px;
-    }
+
 
     .boxx {
       background-color: #23170B;
@@ -130,7 +132,7 @@
       padding: 10px;
       cursor: pointer;
       border-radius: 30px;
-      font-size: x-small;
+      font-size: x-large;
       color: #d4cbc3;
       position: sticky;
       top: 90%;
@@ -143,6 +145,21 @@
       color: #23170B;
       transition: 0.2s;
     }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: serif;
+      font-weight: 600;
+      background-color: bisque;
+
+    }
+    .head1{
+      color: #23170B;
+      font-size: xx-large;
+      font-weight: 700;
+    }
   </style>
 </head>
 
@@ -150,123 +167,130 @@
 
 
 <body>
-  <div class="panner" id="up">
-    <video autoplay loop muted plays-inline>
-      <source src="bun.mp4" type="video/mp4">
-    </video>
-    <div class="navbar">
-      <a href="index.html"> <img class="logo" src="logo.png"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="SuccessStoris.html">Success Stories</a></li>
-          <li><a href="Albun.html">BEANS</a></li>
-          <li><a href="Machines.html">Machines</a></li>
-          <li><a href="SecretRecipe.html">Secret Recipes</a></li>
-          <li><a href="caffeine.html">caffeine</a></li>
-          <li><a href="ResourceLibrary.html">Resource Library</a></li>
-          <li><a href="AboutUS.html">About Us</a></li>
-          <li><a href="ContactUs.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-    <br><br><br><br><br><br><br>
 
-    <h1 class="head1">BEANS</h1>
 
-    <div class="container">
-      <a href="#1">
-        <div class="con">
-          <div class="box" style="background-image: url(arabica.png); ">
-            <h3>Arabica Coffee</h3>
+  <div class="container-fluid" style="padding: 0%;">
+    
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0%;">
+        <p id="up"></p>
+      <div class="container-fluid" style="  background-color: #23170B;  ;">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="Bootstrap" width="60" height="44">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" style="color: #d4cbc2;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SuccessStoris.html" style="color: #d4cbc2;">Success Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="caffeine.html" style="color: #d4cbc2;">caffeine</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color: #d4cbc2;">
+              Courses
+            </a>
+            <ul class="dropdown-menu" style="  background-color: #23170B; ">
+              <li><a class="dropdown-item" href="Albun.html" style="color: #d4cbc2;">BEANS</a></li>
+              <li><a class="dropdown-item" href="Machines.html" style="color: #d4cbc2;">Machines</a></li>
+              <li><a class="dropdown-item" href="SecretRecipe.html" style="color: #d4cbc2;">Secret Recipes</a></li>
+            </ul>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ResourceLibrary.html" style="color: #d4cbc2;">Resource Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUS.html" style="color: #d4cbc2;">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html" style="color: #d4cbc2;">Contact Us</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    
+    <br>
 
-          </div>
+    <div class="container-fluid"> 
+      <h1 class="head1">BEANS</h1>
+
+      <div class="machines-container">
+        
+        <a href="#1" class="machine-box">
+          <img src="arabica.png" alt="arabica">
+        <h3 class="machine-name">Arabica Coffee</h3>
       </a>
+      
+      
+      <a href="#2" class="machine-box">
+        <img src="rop.png" alt="arabica">
+        <h3 class="machine-name">Robusta Coffee</h3>
+      </a>
+      
+      
+      <a href="#3" class="machine-box">
+        <img src="libe.png" alt="libe.png">
+        <h3 class="machine-name">Liberica Coffee</h3>
+      </a>
+
+      <a href="#4" class="machine-box">
+        <img src="exa.png" alt="libe.png">
+        <h3 class="machine-name">Excelsa Coffee</h3>
+      </a>
+      
+      <a href="#5" class="machine-box">
+        <img src="sadaaa.png" alt="libe.png">
+        <h3 class="machine-name">Qahwa Sada</h3>
+      </a>
+      
+      <a href="#6" class="machine-box">
+        <img src="yellow.png" alt="libe.png">
+        <h3 class="machine-name">Qahwa Khadhra</h3>
+      </a>
+      
+      
     </div>
-
-    </b>
-    <a href="#2">
-      <div class="con">
-        <div class="box" style="background-image: url(rop.png);  ">
-          <h3>Robusta Coffee</h3>
-        </div>
-      </div>
-    </a>
   </div>
-  <div class="container">
-    <a href="#3">
+</div>
 
-      <div class="con">
-        <div class="box" style="background-image: url(libe.png);  ">
-          <h3>Liberica Coffee</h3>
-        </div>
-      </div>
-    </a>
+  
 
+<a href="#up" style="text-decoration: none;"><h1 class="boxx">go up ^</h1> </a>
+<img class="logo-left" src="logo.png" alt="Logo">
+<img class="logo-right" src="logo.png" alt="Logo">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="container-fluid">
 
-    </b>
-    <a href="#4">
-
-      <div class="con">
-        <div class="box" style="background-image: url(exa.png); ">
-          <h3>Excelsa Coffee</h3>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="container">
-    <a href="#5">
-
-      <div class="con">
-        <div class="box" style="background-image: url(sadaaa.png); ">
-          <h3>Qahwa Sada</h3>
-          <h6 style="text-align: center;">(Black Arabic Coffee)</h6>
-        </div>
-      </div>
-    </a>
-
-    </b>
-    <a href="#6">
-
-      <div class="con">
-        <div class="box" style="background-image: url(yellow.png); ">
-          <h3>Qahwa Khadhra</h3>
-          <h6 style="text-align: center;">(Yellow Arabic Coffee)</h6>
-        </div>
-      </div>
-    </a>
-  </div>
-  </div>
-  <a href="#up" style="text-decoration: none;">
-
-    <div class="boxx">
-      <h1>go up ^</h1>
-    </div>
-  </a>
-  <img class="logo-left" src="logo.png" alt="Logo">
-  <img class="logo-right" src="logo.png" alt="Logo">
-
-  <div class="container">
     <div class="image-box">
       <img src="arabicaa.jpg" alt="Abu Ammar Coffee" width="400" id="1">
     </div>
-  </div>
 
-
-  <div class="header-box">Arabica Coffee</div>
-  <div class="center">
-    <h1>Origin:</h1><br><br>
-    <h3>Grown in South America, Ethiopia, and Kenya.</h3><br>
-    <h3>Represents approximately 60-70% of global coffee production.</h3>
-    <br><br><br>
-    <h1>Roasting Level:</h1><br><br>
-    <h3>Suitable for all roasting levels:</h3><br>
-    <ul>
-      <li><strong>Light:</strong> Highlights its acidity and fruity notes.</li>
-      <li><strong>Medium to Dark:</strong> Adds a richer, sweeter taste.</li>
-    </ul>
-    <br><br><br>
-    <h1>Acidity Level:</h1><br><br>
+    
+    <div class="header-box">Arabica Coffee</div>
+    <div class="center">
+      <h1>Origin:</h1><br><br>
+      <h3>Grown in South America, Ethiopia, and Kenya.</h3><br>
+      <h3>Represents approximately 60-70% of global coffee production.</h3>
+      <br><br><br>
+      <h1>Roasting Level:</h1><br><br>
+      <h3>Suitable for all roasting levels:</h3><br>
+      <ul>
+        <li><strong>Light:</strong> Highlights its acidity and fruity notes.</li>
+        <li><strong>Medium to Dark:</strong> Adds a richer, sweeter taste.</li>
+      </ul>
+      <br><br><br>
+      <h1>Acidity Level:</h1><br><br>
     <h3>High, around 70%, adding a distinctive flavor and variety in taste.</h3>
     <br><br><br>
     <h1>Flavor Notes:</h1><br><br>
@@ -285,23 +309,21 @@
     <br><br><br><br>
   </div>
   <hr>
-  <div class="container">
-    <div class="image-box">
-      <img src="rope.jpg" alt="rop" width="400" id="2">
-    </div>
+  <div class="image-box">
+    <img src="rope.jpg" alt="rop" width="400" id="2">
   </div>
-
-
+  
+  
   <div class="header-box">Robusta Coffee</div>
   <div class="center">
-
+    
     <h1>Origin:</h1>
     <br><br>
     <h3>Grown in Vietnam, Brazil, India, and Indonesia.</h3>
     <br>
     <h3>Represents approximately 30% of global coffee production.</h3>
     <br><br><br>
-
+    
     <h1>Roasting Level:</h1>
     <br><br>
     <h3>Best roasted medium to dark, enhancing its chocolatey flavor and reducing bitterness.</h3>
@@ -316,25 +338,23 @@
     <br><br>
     <h3>Bitter and sharp, with hints of dark chocolate and earthy tones.</h3>
     <br><br><br>
-
+    
     <h1>Grind Size:</h1>
     <br><br>
     <h3>Often ground fine for espresso.</h3>
     <br><br><br>
-
+    
     <h1>Brewing Equipment:</h1>
     <br><br>
     <h3>Commonly used for espresso and instant coffee.</h3>
     <br><br><br>
   </div>
   <hr>
-  <div class="container">
-    <div class="image-box">
-      <img src="liberica.jpg" alt="Abu Ammar Coffee" width="400" id="3">
-    </div>
+  <div class="image-box">
+    <img src="liberica.jpg" alt="Abu Ammar Coffee" width="400" id="3">
   </div>
-
-
+  
+  
   <div class="header-box">Liberica Coffee</div>
   <div class="center">
     <h1>Origin:</h1>
@@ -343,172 +363,170 @@
     <br>
     <h3>Accounts for a small portion of global production, around 2%.</h3>
     <br><br><br>
-
+    
     <h1>Roasting Level:</h1>
     <br><br>
     <h3>Medium to dark roasts bring out its smoky flavor.</h3>
     <br><br><br>
-
+    
     <h1>Acidity Level:</h1>
     <br><br>
     <h3>Moderate, about 50%.</h3>
     <br><br><br>
-
+    
     <h1>Flavor Notes:</h1>
     <br><br>
     <h3>Smoky, with floral and tropical fruit hints.</h3>
     <br><br><br>
-
+    
     <h1>Grind Size:</h1>
     <br><br>
     <h3>Typically medium to coarse for manual brewing.</h3>
     <br><br><br>
-
+    
     <h1>Brewing Equipment:</h1>
     <br><br>
     <h3>Often used in drip coffee and traditional brewing methods.</h3>
     <br><br><br>
   </div>
   <hr>
-  <div class="container">
     <div class="image-box">
       <img src="ecsa.jpg" alt="Abu Ammar Coffee" width="400" id="4">
     </div>
-  </div>
-
-
-  <div class="header-box">Excelsa Coffee</div>
-  <div class="center">
-    <h1>Origin:</h1>
-    <br><br>
-    <h3>Cultivated in Southeast Asia, especially in Vietnam.</h3>
-    <br>
-    <h3>Represents about 7% of global coffee production.</h3>
-    <br><br><br>
-
-    <h1>Roasting Level:</h1>
-    <br><br>
-    <h3>Light to medium roast is preferred to maintain its unique flavor.</h3>
-    <br><br><br>
-
-    <h1>Acidity Level:</h1>
-    <br><br>
-    <h3>High, around 80%, giving it a tangy, fruit-juice-like character.</h3>
-    <br><br><br>
-
-    <h1>Flavor Notes:</h1>
-    <br><br>
-    <h3>Fruity with strong acidity similar to fruit juices.</h3>
-    <br><br><br>
-
-    <h1>Grind Size:</h1>
-    <br><br>
-    <h3>Medium to coarse for manual brewing.</h3>
-    <br><br><br>
-
-    <h1>Brewing Equipment:</h1>
-    <br><br>
-    <h3>Commonly used in blends to enhance flavor and in manual brewing methods.</h3>
-    <br><br><br>
-  </div>
-  <hr>
-  <div class="container">
+    
+    
+    <div class="header-box">Excelsa Coffee</div>
+    <div class="center">
+      <h1>Origin:</h1>
+      <br><br>
+      <h3>Cultivated in Southeast Asia, especially in Vietnam.</h3>
+      <br>
+      <h3>Represents about 7% of global coffee production.</h3>
+      <br><br><br>
+      
+      <h1>Roasting Level:</h1>
+      <br><br>
+      <h3>Light to medium roast is preferred to maintain its unique flavor.</h3>
+      <br><br><br>
+      
+      <h1>Acidity Level:</h1>
+      <br><br>
+      <h3>High, around 80%, giving it a tangy, fruit-juice-like character.</h3>
+      <br><br><br>
+      
+      <h1>Flavor Notes:</h1>
+      <br><br>
+      <h3>Fruity with strong acidity similar to fruit juices.</h3>
+      <br><br><br>
+      
+      <h1>Grind Size:</h1>
+      <br><br>
+      <h3>Medium to coarse for manual brewing.</h3>
+      <br><br><br>
+      
+      <h1>Brewing Equipment:</h1>
+      <br><br>
+      <h3>Commonly used in blends to enhance flavor and in manual brewing methods.</h3>
+      <br><br><br>
+    </div>
+    <hr>
     <div class="image-box">
       <img src="sada.jpg" alt="Abu Ammar Coffee" width="400" id="5">
     </div>
-  </div>
-
-
+    
+    
+    
   <div class="header-box">Qahwa Sada</div>
   <div class="center">
     <h1>Origin:</h1>
     <br><br>
     <h3>Traditional coffee in many Arab countries, especially in the Gulf region.</h3>
     <br><br><br>
-
+    
     <h1>Roasting Level:</h1>
     <br><br>
     <h3>Lightly roasted to preserve natural flavors.</h3>
     <br><br><br>
-
+    
     <h1>Acidity Level:</h1>
     <br><br>
     <h3>Low to moderate, providing a smooth taste.</h3>
     <br><br><br>
-
+    
     <h1>Flavor Notes:</h1>
     <br><br>
     <h3>Nutty, earthy flavors with a hint of spice (often cardamom).</h3>
     <br><br><br>
-
+    
     <h1>Grind Size:</h1>
     <br><br>
     <h3>Coarse grind, suitable for traditional brewing methods.</h3>
     <br><br><br>
-
+    
     <h1>Brewing Equipment:</h1>
     <br><br>
     <h3>Commonly brewed in a dallah (traditional Arabic coffee pot) or using a cezve.</h3>
     <br><br><br>
-
+    
     <h1>Serving:</h1>
     <br><br>
     <h3>Served without sugar or milk, often accompanied by dates.</h3>
     <br><br><br>
   </div>
   <hr>
-  <div class="container">
-    <div class="image-box">
-      <img src="sudia.jpg" alt="Abu Ammar Coffee" width="400" id="6">
-    </div>
+  
+  <div class="image-box">
+    <img src="sudia.jpg" alt="Abu Ammar Coffee" width="400" id="6">
   </div>
-
-
+  
+  
+  
   <div class="header-box">Qahwa Khadhra</div>
   <div class="center">
-
+    
     <h1>Origin:</h1>
     <br><br>
     <h3>Less common than black coffee, enjoyed in some regions of the Arab world.</h3>
     <br><br><br>
-
+    
     <h1>Roasting Level:</h1>
     <br><br>
     <h3>Lightly roasted, similar to black coffee, with a focus on bright flavors.</h3>
     <br><br><br>
-
+    
     <h1>Acidity Level:</h1>
     <br><br>
     <h3>Moderate to high, giving it a refreshing character.</h3>
     <br><br><br>
-
+    
     <h1>Flavor Notes:</h1>
     <br><br>
     <h3>Floral and citrus notes, with a light, smooth body.</h3>
     <br><br><br>
-
+    
     <h1>Grind Size:</h1>
     <br><br>
     <h3>Coarse grind, similar to black Arabic coffee.</h3>
     <br><br><br>
-
+    
     <h1>Brewing Equipment:</h1>
     <br><br>
     <h3>Brewed using similar methods to black Arabic coffee, such as in a dallah.</h3>
     <br><br><br>
-
+    
     <h1>Serving:</h1>
     <br><br>
     <h3>Enjoyed without additives, allowing the unique flavors to be appreciated.</h3>
     <br><br><br><br><br>
   </div>
-
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
+</div>
+  
 
 
 
@@ -532,20 +550,7 @@
 
   <div class="header">
 
-    <nav>
-      <ul>
-        <li style="padding: 20px 200px;"><a href="test.html">home</a></li>
-        <li style="padding: 20px 117px;"> <a href="ResourceLibrary.html">Resource Library</a></li>
-        <li><a href="SecretRecipe.html">Secret Recipe</a></li> <br>
-        <li><a href="AboutUS.html">About US</a></li>
-        <li style="padding: 20px 145px;"><a href="Machines.html">coffee Machines</a></li>
-        <li> <a href="ContactUs.html">Contact Us</a></li> <br>
-        <li><a href="SuccessStoris.html">Success Storis</a></li>
-        <li><a href="Albun.html">BEANS</a></li>
-      </ul>
-
-    </nav>
-    <br>
+ 
     <div class="fot">
 
 
@@ -571,7 +576,9 @@
 
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 
