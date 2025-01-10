@@ -4,17 +4,17 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
-.navbar-toggler-icon {
-  background-color: #d4cbc2;
-  border-radius: 10px;
-}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: bisque;
 
 }
-
-.panner {
+.navbar-toggler-icon {
+  background-color: #d4cbc2;
+  border-radius: 10px;
+}
+.panner1 {
   width: 100%;
   height: 100vh;
   background-image: url(bunim.png);
@@ -72,22 +72,18 @@ li a:hover {
   transition: 0.1s;
 }
 
-.content {
-  width: 100%;
-  position: absolute;
-  color: #e8e2db;
-  top: 45%;
-  transform: translateY(-50%);
-  text-align: center;
-  z-index: 0;
-}
+.content{
 
-.content h1 {
-  margin-top: 80px;
-  font-size: 90px;
+  text-align: center;
+  color: #d4cbc2;
+  position: absolute;
+  padding-top: 65%;
+  
+}
+.content h1{
+  font-size: 65px;
   font-weight: 800;
 }
-
 button {
   width: 200px;
   padding: 15px;
@@ -146,27 +142,7 @@ button:hover {
   padding: 10px;
 }
 
-.header nav {
-  margin-top: 10px;
-  align-items: center;
-  justify-content: flex-end;
-  text-align: right;
-  padding: 40px;
 
-}
-
-.header nav ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 20px 180px;
-
-}
-
-.header nav ul li a {
-  color: #d4cbc2;
-  text-decoration: none;
-  font-size: 20px;
-}
 
 .fot {
   padding-bottom: 0;
@@ -228,71 +204,5 @@ button:hover {
 }
 
 
-.imagess {
-  justify-content: center;
-  display: flex;
-}
 
-.beans {
-  background-image: url(beanx.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  padding: 10px;
-  border-radius: 25px;
-  width: 250px;
-  height: 250px;
-  margin: 10px;
-}
 
-.beans:hover {
-  background-image: url(BEANSBLUR.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 260px;
-  height: 260px;
-  transition: 0.5s;
-}
-
-.Secret {
-  background-image: url(recepes.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  border-radius: 25px;
-  width: 250px;
-  height: 250px;
-  margin: 10px;
-}
-
-.Secret:hover {
-  background-image: url(SecretBLUR.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 260px;
-  height: 260px;
-  transition: 0.5s;
-}
-
-.machines {
-  background-image: url(v60mach.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  border-radius: 25px;
-  width: 250px;
-  height: 250px;
-  margin: 10px;
-}
-
-.machines:hover {
-  background-image: url(MACHINESBLUR.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 260px;
-  height: 260px;
-  transition: 0.5s;
-}
