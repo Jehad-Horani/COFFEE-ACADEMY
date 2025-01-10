@@ -14,9 +14,9 @@ body {
 .panner {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+  background-image: url(bunim.png);
   background-position: center;
-  background-size: center;
+  background-size: cover;
 }
 
 .navbar {
@@ -107,25 +107,7 @@ button:hover {
   color: #d4cbc3;
 }
 
-.panner video {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
 
-@media(min-aspect-ratio : 16/9) {
-  .panner video {
-    width: 100%;
-    height: auto;
-  }
-}
-@media(max-aspect-ratio : 16/9) {
-  .panner video {
-    width: auto;
-    height: 100%;
-  }
-}
 
 .email h1 {
   color: #23170B;
