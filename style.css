@@ -17,7 +17,7 @@ body {
 .panner1{
   width: 100%;
   height: 90vh;
-  background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+  background-image: linear-gradient;
   background-position: center;
   background-size: cover;
 }
